@@ -1,14 +1,14 @@
 import React from 'react';
-import { useCountRender } from './useCountRender';
+// import { useCountRender } from './useCountRender';
 
 const Hello = React.memo(({increment}) => {
 
-    useCountRender();
+    // useCountRender();
 
     return (
-        <button onClick={increment}>hello</button>
+        <button onClick={() => increment(1)}>hello</button>
     );
-    
+
 });
 
 export default Hello;
