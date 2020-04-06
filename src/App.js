@@ -13,7 +13,7 @@ const App = () => {
   }, [setCount])
   
   return (
-    <div>
+    <div style={{margin: 20}}>
       <Hello increment={increment} />
 
       <div>{count}</div>
